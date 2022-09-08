@@ -1,5 +1,49 @@
 Config = Config or {}
 
+Config.NotifyType = "okok"  -- Change to "qb" to adjust to qb-core notifications, change to "okok" to adjust to "okokNotify" notifications
+
+--mz-skills
+Config.mzskills = true      -- Change to "false" if you do not wish to use mz-skills.
+-- If mz-skills is 'true', the following parameters apply: 
+Config.DriverXPlow = 1      -- Lowest "Driving" XP granted to player for successful passenger drop-off.
+Config.DriverXPhigh = 3     -- Highest "Driving" XP granted to player for successful passenger drop-off.
+
+--Payment
+Config.paylow = 30          -- Lowest amount payable by passangers for the bus fare
+Config.payhigh = 60         -- Highest amount payable by passangers for the bus fare
+Config.basebonuslow = 10    -- Lowest amount of random bonus fare payable
+Config.basebonushigh = 20   -- Highest amount of random bonus fare payable
+
+--BONUS PAYMENT
+Config.BonusChance = 50     -- Percentage chance of the player receiving a bonus payment.
+--Level 0
+Config.Level0Low = 1
+Config.Level0High = 3
+--Level 1
+Config.Level1Low = 2
+Config.Level1High = 5
+--Level 2
+Config.Level2Low = 3
+Config.Level2High = 8
+--Level 3
+Config.Level3Low = 5
+Config.Level3High = 12
+--Level 4
+Config.Level4Low = 8
+Config.Level4High = 16
+--Level 5
+Config.Level5Low = 10
+Config.Level5High = 18
+--Level 6
+Config.Level6Low = 13
+Config.Level6High = 22
+--Level 7
+Config.Level7Low = 15
+Config.Level7High = 26
+--Level 8
+Config.Level8Low = 18
+Config.Level8High = 30
+
 Config.AllowedVehicles = {
     [1] = {model = "bus", label = Lang:t('info.bus')},
 }
@@ -9,10 +53,18 @@ Config.Location = vector4(462.22, -641.15, 28.45, 175.0)
 Config.NPCLocations = {
     Locations = {
         vector4(304.36, -764.56, 29.31, 252.09),
+        vector4(-504.88, 23.81, 44.79, 186.53),
         vector4(-110.31, -1686.29, 29.31, 223.84),
         vector4(-712.83, -824.56, 23.54, 194.7),
         vector4(-692.63, -670.44, 30.86, 61.84),
         vector4(-250.14, -886.78, 30.63, 8.67),
+        vector4(-696.9, -1.37, 38.22, 207.42),
+        vector4(256.3, -1118.52, 29.32, 184.05),
+        vector4(357.14, -1067.36, 29.56, 355.29),
+        vector4(-557.14, -849.43, 27.68, 7.63),
+        vector4(-737.69, -750.16, 26.89, 95.78),
+        vector4(-931.62, -119.94, 37.78, 208.36),
+        vector4(-248.21, -713.66, 33.54, 249.7),
     }
 }
 
